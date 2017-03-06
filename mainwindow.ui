@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>669</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabs">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>851</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tabAuto">
+     <attribute name="title">
+      <string>Automatique</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>831</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="lblStep3">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resimages.qrc">:/EcluseAuto/step3.png</pixmap>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lblStep2">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resimages.qrc">:/EcluseAuto/step2.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QLabel" name="lblStep2Text">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Avancez le navire dans le sas</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblStep1">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resimages.qrc">:/EcluseAuto/step1.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="btnAutoSensAvalant">
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#btnAutoSensAvalant[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #5555FF;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoSensAvalant[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #55AAFF;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoSensAvalant[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #55AAFF;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoSensAvalant[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>AVALANT</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QLabel" name="lblStep1Text">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Choisissez le sens de passage</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <widget class="QLabel" name="lblStep3Text">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Remise à niveau</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="btnAutoDemarrer">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#btnAutoDemarrer[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoDemarrer[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoDemarrer[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoDemarrer[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>DÉMARRER</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btnAutoSensMontant">
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#btnAutoSensMontant[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #5555FF;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoSensMontant[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #55AAFF;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoSensMontant[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #55AAFF;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 20px 0px;
+}
+
+QPushButton#btnAutoSensMontant[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>MONTANT</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4" rowspan="5">
+        <widget class="QPushButton" name="btnArretUrgence">
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#btnArretUrgence[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #FF0000;
+	border-radius: 10px;
+	border: none;
+	padding: 60px;
+	margin-left: 10px;
+}
+
+QPushButton#btnArretUrgence[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #FF5500;
+	border-radius: 10px;
+	border: none;
+	padding: 60px;
+	margin-left: 10px;
+}
+
+QPushButton#btnArretUrgence[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #FF5500;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 60px;
+	margin-left: 10px;
+}
+
+QPushButton#btnArretUrgence[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>ARRÊT
+URGENCE</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3" rowspan="5">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabManuel">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Mode Manuel</string>
+     </attribute>
+     <widget class="QGroupBox" name="gpbManuelPortes">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>401</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string> Portes </string>
+      </property>
+      <widget class="QPushButton" name="btnManuelPortesAmont">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>181</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelPortesAmont[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>OUVRIR
+AMONT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnManuelPortesAval">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>30</y>
+         <width>181</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelPortesAval[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>OUVRIR
+AVAL</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="gpbManuelVannes">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>10</y>
+        <width>401</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string> Vannes </string>
+      </property>
+      <widget class="QPushButton" name="btnManuelVannesAmont">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>181</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelVannesAmont[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>OUVRIR
+AMONT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnManuelVannesAval">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>30</y>
+         <width>181</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelVannesAval[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>OUVRIR
+AVAL</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="gpbManuelSignalisationEntrees">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>551</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string> Signalisation entrées </string>
+      </property>
+      <widget class="QPushButton" name="btnManuelSigEntAmont">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>261</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigEntAmont[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>VERT
+EN AMONT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnManuelSigEntAval">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>30</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigEntAval[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>VERT
+EN AVAL</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="gpbManuelSignalisationSas">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>551</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string> Signalisation sas </string>
+      </property>
+      <widget class="QPushButton" name="btnManuelSigSasAmont">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>261</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigSasAmont[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>VERT
+EN AMONT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnManuelSigSasAval">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>30</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #55AA00;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #6CD800;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 5px 0px;
+}
+
+QPushButton#btnManuelSigSasAval[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 0px;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>VERT
+EN AVAL</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnArretUrgenceMan">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>140</y>
+        <width>248</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnArretUrgenceMan[enabled=&quot;true&quot;] {
+	color: #FFFFFF;
+	background-color: #FF0000;
+	border-radius: 10px;
+	border: none;
+	padding: 30px;
+}
+
+QPushButton#btnArretUrgenceMan[enabled=&quot;true&quot;]:hover {
+	color: #FFFFFF;
+	background-color: #FF5500;
+	border-radius: 10px;
+	border: none;
+	padding: 30px;
+}
+
+QPushButton#btnArretUrgenceMan[enabled=&quot;true&quot;]:pressed {
+	color: #FFFFFF;
+	background-color: #FF5500;
+	border-radius: 10px;
+	border: 2px solid #FFFFFF;
+	padding: 30px;
+}
+
+QPushButton#btnArretUrgenceMan[enabled=&quot;false&quot;] {
+	color: #666666;
+	background-color: #BEBEBE;
+	border-radius: 10px;
+	border: none;
+	padding: 20px 0px;
+}</string>
+      </property>
+      <property name="text">
+       <string>ARRÊT
+URGENCE</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="aniFond">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>200</y>
+      <width>810</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniPorteAmont">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>50</y>
+      <width>25</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/porte_fermee.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniPorteAval">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>50</y>
+      <width>25</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/porte_fermee.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniNiveauSas">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>60</y>
+      <width>310</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00aaff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniNiveauAmont">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>241</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00aaff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniNiveauAval">
+    <property name="geometry">
+     <rect>
+      <x>579</x>
+      <y>60</y>
+      <width>261</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00aaff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniVanneAmont">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>200</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00aaff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniVanneAval">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>200</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00aaff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniVanneAmontOuverture">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>200</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/vanne_fermee.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniVanneAvalOuverture">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>200</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/vanne_fermee.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniNavire">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>70</y>
+      <width>166</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/navire.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFeuEntreeAmont">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>50</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFeuSasAmont">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>60</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFeuSasAval">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>60</y>
+      <width>31</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFeuEntreeAval">
+    <property name="geometry">
+     <rect>
+      <x>615</x>
+      <y>10</y>
+      <width>50</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+    </property>
+   </widget>
+   <zorder>aniNavire</zorder>
+   <zorder>aniNiveauAval</zorder>
+   <zorder>aniNiveauAmont</zorder>
+   <zorder>aniNiveauSas</zorder>
+   <zorder>tabs</zorder>
+   <zorder>aniFond</zorder>
+   <zorder>aniPorteAmont</zorder>
+   <zorder>aniPorteAval</zorder>
+   <zorder>aniVanneAmont</zorder>
+   <zorder>aniVanneAval</zorder>
+   <zorder>aniVanneAmontOuverture</zorder>
+   <zorder>aniVanneAvalOuverture</zorder>
+   <zorder>aniFeuEntreeAmont</zorder>
+   <zorder>aniFeuSasAmont</zorder>
+   <zorder>aniFeuSasAval</zorder>
+   <zorder>aniFeuEntreeAval</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>872</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resimages.qrc"/>
+ </resources>
+ <connections/>
+</ui>

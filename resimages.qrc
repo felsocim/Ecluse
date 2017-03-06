@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/EcluseAuto">
+        <file>step1.png</file>
+        <file>step2.png</file>
+        <file>step3.png</file>
+        <file>fond.png</file>
+        <file>porte_fermee.png</file>
+        <file>vanne_fermee.png</file>
+        <file>vanne_ouverte.png</file>
+        <file>navire.png</file>
+        <file>feu_rouge.png</file>
+        <file>feu_vert.png</file>
+        <file>navireInverse.png</file>
+    </qresource>
+</RCC>
