@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QThread>
+#include "porte.h"
+#include "signalisation.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,9 +20,23 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    Porte *porteAmont;
+    Porte *porteAval;
+    Signalisation *entAmont;
+    Signalisation *entAval;
+    Signalisation *sasAmont;
+    Signalisation *sasAval;
+
 
 private slots:
-    void echangeFeu();
+    void echangeFeuManuelSigEntAmont();
+    void echangeFeuManuelSigEntAval();
+    void echangeFeuManuelSigSasAmont();
+    void echangeFeuManuelSigSasAval();
+    void lancementPorteAmont();
+    void lancementPorteAval();
+    void echangePorteAmont(int);
+    void echangePorteAval(int);
 };
 
 #endif // MAINWINDOW_H

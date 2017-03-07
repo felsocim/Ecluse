@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>872</width>
-    <height>669</height>
+    <width>871</width>
+    <height>757</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,9 +21,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>240</y>
+      <y>330</y>
       <width>851</width>
-      <height>401</height>
+      <height>391</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -403,7 +403,7 @@ URGENCE</string>
        <property name="styleSheet">
         <string notr="true">QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -411,7 +411,7 @@ URGENCE</string>
 
 QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -419,7 +419,7 @@ QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;]:hover {
 
 QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -462,7 +462,7 @@ AMONT</string>
        <property name="styleSheet">
         <string notr="true">QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -470,7 +470,7 @@ AMONT</string>
 
 QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -478,7 +478,7 @@ QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;]:hover {
 
 QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -541,7 +541,7 @@ AVAL</string>
        <property name="styleSheet">
         <string notr="true">QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -549,7 +549,7 @@ AVAL</string>
 
 QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -557,7 +557,7 @@ QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;]:hover {
 
 QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -600,7 +600,7 @@ AMONT</string>
        <property name="styleSheet">
         <string notr="true">QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -608,7 +608,7 @@ AMONT</string>
 
 QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -616,7 +616,7 @@ QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;]:hover {
 
 QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -679,7 +679,7 @@ AVAL</string>
        <property name="styleSheet">
         <string notr="true">QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -687,7 +687,7 @@ AVAL</string>
 
 QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -695,7 +695,7 @@ QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;]:hover {
 
 QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -738,7 +738,7 @@ EN AMONT</string>
        <property name="styleSheet">
         <string notr="true">QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -746,7 +746,7 @@ EN AMONT</string>
 
 QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -754,7 +754,7 @@ QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;]:hover {
 
 QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -817,7 +817,7 @@ EN AVAL</string>
        <property name="styleSheet">
         <string notr="true">QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -825,7 +825,7 @@ EN AVAL</string>
 
 QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -833,7 +833,7 @@ QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;]:hover {
 
 QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -876,7 +876,7 @@ EN AMONT</string>
        <property name="styleSheet">
         <string notr="true">QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -884,7 +884,7 @@ EN AMONT</string>
 
 QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
@@ -892,7 +892,7 @@ QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;]:hover {
 
 QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -974,7 +974,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>200</y>
+      <y>250</y>
       <width>810</width>
       <height>25</height>
      </rect>
@@ -990,7 +990,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>250</x>
-      <y>50</y>
+      <y>100</y>
       <width>25</width>
       <height>150</height>
      </rect>
@@ -1006,7 +1006,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>580</x>
-      <y>50</y>
+      <y>100</y>
       <width>25</width>
       <height>150</height>
      </rect>
@@ -1022,9 +1022,9 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>60</y>
+      <y>189</y>
       <width>310</width>
-      <height>140</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1038,9 +1038,9 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>140</y>
+      <y>149</y>
       <width>241</width>
-      <height>60</height>
+      <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1054,9 +1054,9 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>579</x>
-      <y>60</y>
+      <y>189</y>
       <width>261</width>
-      <height>140</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1069,8 +1069,8 @@ URGENCE</string>
    <widget class="QLabel" name="aniVanneAmont">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>200</y>
+      <x>211</x>
+      <y>250</y>
       <width>100</width>
       <height>25</height>
      </rect>
@@ -1086,7 +1086,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>540</x>
-      <y>200</y>
+      <y>250</y>
       <width>100</width>
       <height>25</height>
      </rect>
@@ -1102,7 +1102,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>250</x>
-      <y>200</y>
+      <y>250</y>
       <width>25</width>
       <height>25</height>
      </rect>
@@ -1118,7 +1118,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>580</x>
-      <y>200</y>
+      <y>250</y>
       <width>25</width>
       <height>25</height>
      </rect>
@@ -1134,9 +1134,9 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>70</y>
+      <y>80</y>
       <width>166</width>
-      <height>80</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
@@ -1166,7 +1166,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>275</x>
-      <y>60</y>
+      <y>110</y>
       <width>31</width>
       <height>51</height>
      </rect>
@@ -1185,7 +1185,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>60</y>
+      <y>110</y>
       <width>31</width>
       <height>51</height>
      </rect>
@@ -1203,7 +1203,7 @@ URGENCE</string>
    <widget class="QLabel" name="aniFeuEntreeAval">
     <property name="geometry">
      <rect>
-      <x>615</x>
+      <x>620</x>
       <y>10</y>
       <width>50</width>
       <height>73</height>
@@ -1214,6 +1214,54 @@ URGENCE</string>
     </property>
     <property name="pixmap">
      <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>270</y>
+      <width>810</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
     </property>
    </widget>
    <zorder>aniNavire</zorder>
@@ -1232,14 +1280,17 @@ URGENCE</string>
    <zorder>aniFeuSasAmont</zorder>
    <zorder>aniFeuSasAval</zorder>
    <zorder>aniFeuEntreeAval</zorder>
+   <zorder>aniFond_2</zorder>
+   <zorder>aniFond_3</zorder>
+   <zorder>aniFond_4</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>872</width>
-     <height>21</height>
+     <width>871</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>
