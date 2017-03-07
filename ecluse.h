@@ -1,21 +1,16 @@
 #ifndef ECLUSE_H
 #define ECLUSE_H
 
+#include <QObject>
+#include "vanne.h"
 
 class Ecluse
 {
 public:
     Ecluse();
 private:
-    bool porteAmont;
-    bool porteAval;
-    bool feuEntreeAmont;
-    bool feuEntreeAval;
-    bool feuSasAmont;
-    bool feuSasAval;
-    bool vanneAmont;
-    bool vanneAval;
-
+    Vanne vanneAmont;
+    Vanne vanneAval;
 };
 
 #endif // ECLUSE_H

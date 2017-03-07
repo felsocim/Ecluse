@@ -25,14 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    porte.cpp \
-    ecluse.cpp \
-    signalisation.cpp
+    vanne.cpp \
+    ecluse.cpp
 
 HEADERS  += mainwindow.h \
-    porte.h \
-    ecluse.h \
-    signalisation.h
+    vanne.h \
+    ecluse.h
 
 FORMS    += mainwindow.ui
 

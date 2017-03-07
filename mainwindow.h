@@ -3,8 +3,8 @@
 
 #include <QMainWindow>
 #include <QThread>
-#include "porte.h"
-#include "signalisation.h"
+#include <stdlib.h>
+#include "vanne.h"
 
 namespace Ui {
 class MainWindow;
@@ -20,23 +20,18 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    Porte *porteAmont;
-    Porte *porteAval;
-    Signalisation *entAmont;
-    Signalisation *entAval;
-    Signalisation *sasAmont;
-    Signalisation *sasAval;
-
+    Vanne * vanneAmont;
+    Vanne * vanneAval;
+    bool urgence;
 
 private slots:
-    void echangeFeuManuelSigEntAmont();
-    void echangeFeuManuelSigEntAval();
-    void echangeFeuManuelSigSasAmont();
-    void echangeFeuManuelSigSasAval();
-    void lancementPorteAmont();
-    void lancementPorteAval();
-    void echangePorteAmont(int);
-    void echangePorteAval(int);
+    void etat_vanne_amont(bool etat);
+    void changer_vanne_amont();
+    void niveau_eau_sas_amont(int niveau_sas);
+    void niveau_eau_sas_aval(int niveau_sas);
+    void etat_vanne_aval(bool etat);
+    void changer_vanne_aval();
+    void arret_urgence();
 };
 
 #endif // MAINWINDOW_H
