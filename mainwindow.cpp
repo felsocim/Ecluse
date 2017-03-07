@@ -87,12 +87,12 @@ void MainWindow::echangeFeuManuelSigEntAval()
     if ( this->entAval->get_couleur())
     {
         image.load(":/EcluseAuto/feu_rouge.png");
-        ui->btnManuelSigEntAval->setText("VERT\nEN AMONT");
+        ui->btnManuelSigEntAval->setText("VERT\nEN AVAL");
     }
     else
     {
         image.load(":/EcluseAuto/feu_vert.png");
-        ui->btnManuelSigEntAval->setText("ROUGE\n EN AMONT");
+        ui->btnManuelSigEntAval->setText("ROUGE\n EN AVAL");
     }
 
     ui->aniFeuEntreeAval->setPixmap(image);
@@ -125,12 +125,12 @@ void MainWindow::echangeFeuManuelSigSasAval()
     if ( this->sasAval->get_couleur())
     {
         image.load(":/EcluseAuto/feu_rouge.png");
-        ui->btnManuelSigSasAval->setText("VERT\nEN AMONT");
+        ui->btnManuelSigSasAval->setText("VERT\nEN AVAL");
     }
     else
     {
         image.load(":/EcluseAuto/feu_vert.png");
-        ui->btnManuelSigSasAval->setText("ROUGE\n EN AMONT");
+        ui->btnManuelSigSasAval->setText("ROUGE\n EN AVAL");
     }
 
     ui->aniFeuSasAval->setPixmap(image);
