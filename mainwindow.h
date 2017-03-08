@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QThread>
+#include <stdlib.h>
+#include "vanne.h"
 #include "porte.h"
 #include "signalisation.h"
 
@@ -20,15 +22,24 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    Porte *porteAmont;
-    Porte *porteAval;
-    Signalisation *entAmont;
-    Signalisation *entAval;
-    Signalisation *sasAmont;
-    Signalisation *sasAval;
-
+    Vanne * vanneAmont;
+    Vanne * vanneAval;
+    Porte * porteAmont;
+    Porte * porteAval;
+    Signalisation * entAmont;
+    Signalisation * entAval;
+    Signalisation * sasAmont;
+    Signalisation * sasAval;
+    bool urgence;
 
 private slots:
+    void etat_vanne_amont(bool etat);
+    void changer_vanne_amont();
+    void niveau_eau_sas_amont(int niveau_sas);
+    void niveau_eau_sas_aval(int niveau_sas);
+    void etat_vanne_aval(bool etat);
+    void changer_vanne_aval();
+    void arret_urgence();
     void echangeFeuManuelSigEntAmont();
     void echangeFeuManuelSigEntAval();
     void echangeFeuManuelSigSasAmont();

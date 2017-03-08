@@ -13,6 +13,7 @@ int Porte::get_ouvert(){
 
 void Porte::run(){
   of();
+
 }
 
 void Porte::of() {
