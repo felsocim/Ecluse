@@ -116,9 +116,11 @@ void MainWindow::arret_urgence()
         panne->terminate();
         urgence = true;
 
-        //this->vanneAmont->declancher_alarme();
+        if(this->vanneAmont->getEtat())
+            this->vanneAmont->changer_etat();
         //ui->btnManuelVannesAmont->setText("ALARME\nEN AMONT");
-        //this->vanneAval->declancher_alarme();
+        if(this->vanneAval->getEtat())
+            this->vanneAval->changer_etat();
         //ui->btnManuelVannesAval->setText("ALARME\nEN AVAL");
 
         ui->btnManuelVannesAmont->setProperty("enabled", false);
@@ -307,6 +309,7 @@ void MainWindow::panne_aleatoire(int value)
 {
         arret_urgence();
         panne->terminate();
+        panne->wait();
 
 
         ui->btnArretUrgenceMan->setText("EXTINCTION\nALARME");
@@ -391,11 +394,11 @@ void MainWindow::alarme_vanne_aval(bool alarme)
     {
         image.load(":/EcluseAuto/vanne_panne.png");
         warning.load(":/EcluseAuto/warning.png");
-        ui->btnManuelVannesAval->setText("FERMER\nAVAL");
+        /*ui->btnManuelVannesAval->setText("FERMER\nAVAL");
         ui->btnManuelVannesAval->setProperty("fermer", true);
         ui->btnManuelVannesAval->style()->unpolish(ui->btnManuelVannesAval);
         ui->btnManuelVannesAval->style()->polish(ui->btnManuelVannesAval);
-        ui->btnManuelVannesAval->update();
+        ui->btnManuelVannesAval->update();*/
         ui->aniVanneAvalOuverture->setPixmap(image);
 
         ui->aniWarning->setPixmap(warning);
@@ -406,11 +409,11 @@ void MainWindow::alarme_vanne_aval(bool alarme)
     else
     {
         image.load(":/EcluseAuto/vanne_fermee.png");
-        ui->btnManuelVannesAval->setText("OUVRIR\nAVAL");
+        /*ui->btnManuelVannesAval->setText("OUVRIR\nAVAL");
         ui->btnManuelVannesAval->setProperty("fermer", false);
         ui->btnManuelVannesAval->style()->unpolish(ui->btnManuelVannesAval);
         ui->btnManuelVannesAval->style()->polish(ui->btnManuelVannesAval);
-        ui->btnManuelVannesAval->update();
+        ui->btnManuelVannesAval->update();*/
         ui->aniVanneAvalOuverture->setPixmap(image);
     }
 }
@@ -424,11 +427,11 @@ void MainWindow::alarme_vanne_amont(bool alarme)
     {
         image.load(":/EcluseAuto/vanne_panne.png");
         warning.load(":/EcluseAuto/warning.png");
-        ui->btnManuelVannesAmont->setText("FERMER\nAVAL");
+        /*ui->btnManuelVannesAmont->setText("FERMER\nAVAL");
         ui->btnManuelVannesAmont->setProperty("fermer", true);
         ui->btnManuelVannesAmont->style()->unpolish(ui->btnManuelVannesAmont);
         ui->btnManuelVannesAmont->style()->polish(ui->btnManuelVannesAmont);
-        ui->btnManuelVannesAmont->update();
+        ui->btnManuelVannesAmont->update();*/
         ui->aniVanneAmontOuverture->setPixmap(image);
 
         ui->aniWarning->setPixmap(warning);
@@ -437,11 +440,11 @@ void MainWindow::alarme_vanne_amont(bool alarme)
     else
     {
         image.load(":/EcluseAuto/vanne_fermee.png");
-        ui->btnManuelVannesAmont->setText("OUVRIR\nAVAL");
+        /*ui->btnManuelVannesAmont->setText("OUVRIR\nAVAL");
         ui->btnManuelVannesAmont->setProperty("fermer", false);
         ui->btnManuelVannesAmont->style()->unpolish(ui->btnManuelVannesAmont);
         ui->btnManuelVannesAmont->style()->polish(ui->btnManuelVannesAmont);
-        ui->btnManuelVannesAmont->update();
+        ui->btnManuelVannesAmont->update();*/
         ui->aniVanneAmontOuverture->setPixmap(image);
     }
 }

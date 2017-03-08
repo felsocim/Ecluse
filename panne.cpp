@@ -23,7 +23,7 @@ void Panne::thread_panne() {
     int nombre_aleatoire2 = 0;
     srand(time(NULL));
 
-    nombre_aleatoire = rand()%(10-0); // 0 à 9
+    nombre_aleatoire = rand()%(100-0); // 0 à 9
     printf("%d ",nombre_aleatoire);
 
 
