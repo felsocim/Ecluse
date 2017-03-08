@@ -11,5 +11,8 @@
         <file>feu_rouge.png</file>
         <file>feu_vert.png</file>
         <file>navireInverse.png</file>
+        <file>blank.png</file>
+        <file>vanne_panne.png</file>
+        <file>warning.png</file>
     </qresource>
 </RCC>

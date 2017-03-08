@@ -24,7 +24,7 @@ public:
     int getNiveauEauExterieur();
     int getNiveauEauSas();
     bool getEtat();
-    void declancher_alarme();
+    void declencher_alarme();
     void extinction_alarme();
 public slots:
     void changer_etat();

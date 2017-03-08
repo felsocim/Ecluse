@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>872</width>
-    <height>750</height>
+    <height>787</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>320</y>
+      <y>350</y>
       <width>851</width>
       <height>401</height>
      </rect>
@@ -1298,9 +1298,9 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>579</x>
-      <y>240</y>
+      <y>209</y>
       <width>261</width>
-      <height>30</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1313,7 +1313,7 @@ URGENCE</string>
    <widget class="QLabel" name="aniVanneAmont">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>211</x>
       <y>270</y>
       <width>100</width>
       <height>25</height>
@@ -1346,7 +1346,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>250</x>
-      <y>270</y>
+      <y>295</y>
       <width>25</width>
       <height>25</height>
      </rect>
@@ -1362,7 +1362,7 @@ URGENCE</string>
     <property name="geometry">
      <rect>
       <x>580</x>
-      <y>270</y>
+      <y>295</y>
       <width>25</width>
       <height>25</height>
      </rect>
@@ -1460,6 +1460,183 @@ URGENCE</string>
      <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
     </property>
    </widget>
+   <widget class="QLabel" name="aniWarning">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniWarningText">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniVanneAmont_2">
+    <property name="geometry">
+     <rect>
+      <x>211</x>
+      <y>295</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00aaff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>295</y>
+      <width>810</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_6">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>270</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniVanneAval_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>295</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00aaff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_7">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>270</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniFond_8">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>320</y>
+      <width>810</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+    </property>
+   </widget>
+   <zorder>aniFond_5</zorder>
    <zorder>aniNavire</zorder>
    <zorder>aniNiveauAval</zorder>
    <zorder>aniNiveauAmont</zorder>
@@ -1470,12 +1647,22 @@ URGENCE</string>
    <zorder>aniPorteAval</zorder>
    <zorder>aniVanneAmont</zorder>
    <zorder>aniVanneAval</zorder>
-   <zorder>aniVanneAmontOuverture</zorder>
-   <zorder>aniVanneAvalOuverture</zorder>
    <zorder>aniFeuEntreeAmont</zorder>
    <zorder>aniFeuSasAmont</zorder>
    <zorder>aniFeuSasAval</zorder>
    <zorder>aniFeuEntreeAval</zorder>
+   <zorder>aniWarning</zorder>
+   <zorder>aniWarningText</zorder>
+   <zorder>aniFond_2</zorder>
+   <zorder>aniFond_3</zorder>
+   <zorder>aniFond_4</zorder>
+   <zorder>aniVanneAmont_2</zorder>
+   <zorder>aniVanneAmontOuverture</zorder>
+   <zorder>aniFond_6</zorder>
+   <zorder>aniVanneAval_2</zorder>
+   <zorder>aniVanneAvalOuverture</zorder>
+   <zorder>aniFond_7</zorder>
+   <zorder>aniFond_8</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -1483,7 +1670,7 @@ URGENCE</string>
      <x>0</x>
      <y>0</y>
      <width>872</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
