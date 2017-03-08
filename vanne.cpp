@@ -21,6 +21,8 @@ void Vanne::run()
         emit signaler_niveau_eau(niveau_eau_sas);
         sleep(1);
     }
+
+    emit signaler_fin_cycle(this->etat);
 }
 
 bool Vanne::getEtat()

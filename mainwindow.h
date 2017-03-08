@@ -48,6 +48,14 @@ private slots:
     void lancementPorteAval();
     void echangePorteAmont(int);
     void echangePorteAval(int);
+    void fin_cycle_porte_amont(bool etat);
+    void fin_cycle_porte_aval(bool etat);
+    void fin_cycle_vanne_amont(bool etat);
+    void fin_cycle_vanne_aval(bool etat);
+    void feuxEntreeAmont(bool value);
+    void feuxSasAmont(bool value);
+    void feuxEntreeAval(bool value);
+    void feuxSasAval(bool value);
 };
 
 #endif // MAINWINDOW_H

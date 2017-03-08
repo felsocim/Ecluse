@@ -16,15 +16,10 @@ protected:
     void run();
 
 protected:
-    bool couleur; // 1 vert 0 rouge
+    bool couleur; // TRUE vert, FALSE rouge
 
 signals:
-    void transition(int value);
-
-/*private slots:
-    void of(); // ouverture ou fermeture de la porte*/
+    void transition(bool value);
 };
 
-
-
-#endif // PORTE_H
+#endif

@@ -24,15 +24,16 @@ public:
     int getNiveauEauExterieur();
     int getNiveauEauSas();
     bool getEtat();
-public slots:
-    void changer_etat();
     void declancher_alarme();
     void extinction_alarme();
+public slots:
+    void changer_etat();
     void remise_a_niveau();
 signals:
     void signaler_alarme(bool alarme);
     void signaler_etat(bool etat);
     void signaler_niveau_eau(int niveau_sas);
+    void signaler_fin_cycle(bool etat);
 };
 
 #endif // VANNE_H

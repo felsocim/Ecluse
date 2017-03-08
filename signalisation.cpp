@@ -13,10 +13,8 @@ int Signalisation::get_couleur(){
 
 void Signalisation::run()
 {
-    if ( this->couleur )
-        this->couleur = 0;
-    else
-        this->couleur = 1;
+    this->couleur = !this->couleur;
+    emit transition(this->couleur);
 }
 
 
