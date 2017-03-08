@@ -9,7 +9,7 @@ class Porte : public QThread
 public:
     explicit Porte(QObject *parent = 0);
     int get_ouvert();
-    void declancher_alarme();
+    void declencher_alarme();
     void extinction_alarme();
 
 protected:

@@ -1460,6 +1460,38 @@ URGENCE</string>
      <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
     </property>
    </widget>
+   <widget class="QLabel" name="aniWarning">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aniWarningText">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>aniNavire</zorder>
    <zorder>aniNiveauAval</zorder>
    <zorder>aniNiveauAmont</zorder>
@@ -1476,6 +1508,8 @@ URGENCE</string>
    <zorder>aniFeuSasAmont</zorder>
    <zorder>aniFeuSasAval</zorder>
    <zorder>aniFeuEntreeAval</zorder>
+   <zorder>aniWarning</zorder>
+   <zorder>aniWarningText</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -1483,7 +1517,7 @@ URGENCE</string>
      <x>0</x>
      <y>0</y>
      <width>872</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

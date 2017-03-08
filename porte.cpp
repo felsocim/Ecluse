@@ -30,7 +30,7 @@ void Porte::of() {
     }
 }
 
-void Porte::declancher_alarme()
+void Porte::declencher_alarme()
 {
     this->alarme = true;
 

@@ -7,6 +7,8 @@
 #include "vanne.h"
 #include "porte.h"
 #include "signalisation.h"
+#include "panne.h"
+#include <QTextStream>
 
 namespace Ui {
 class MainWindow;
@@ -30,6 +32,7 @@ private:
     Signalisation * entAval;
     Signalisation * sasAmont;
     Signalisation * sasAval;
+    Panne * panne;
     bool urgence;
 
 private slots:
@@ -38,8 +41,13 @@ private slots:
     void niveau_eau_sas_amont(int niveau_sas);
     void niveau_eau_sas_aval(int niveau_sas);
     void etat_vanne_aval(bool etat);
+    void alarme_vanne_amont(bool alarme);
+    void alarme_vanne_aval(bool alarme);
+    void alarme_porte_amont(bool alarme);
+    void alarme_porte_aval(bool alarme);
     void changer_vanne_aval();
     void arret_urgence();
+    void panne_aleatoire(int value);
     void echangeFeuManuelSigEntAmont();
     void echangeFeuManuelSigEntAval();
     void echangeFeuManuelSigSasAmont();

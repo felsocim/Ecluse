@@ -27,12 +27,14 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     vanne.cpp \
     porte.cpp \
-    signalisation.cpp
+    signalisation.cpp \
+    panne.cpp
 
 HEADERS  += mainwindow.h \
     vanne.h \
     porte.h \
-    signalisation.h
+    signalisation.h \
+    panne.h
 
 FORMS    += mainwindow.ui
 

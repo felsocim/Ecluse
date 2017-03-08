@@ -36,7 +36,7 @@ void Vanne::changer_etat()
     emit signaler_etat(this->etat);
 }
 
-void Vanne::declancher_alarme()
+void Vanne::declencher_alarme()
 {
     this->alarme = true;
     this->etat = false;
