@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     vanneAmont->setNiveauEauPas(10);
     vanneAval->setNiveauEauPas(10);
+    changer_vanne_amont();
 
     urgence = false;
 
@@ -118,10 +119,8 @@ void MainWindow::arret_urgence()
 
         if(this->vanneAmont->getEtat())
             this->vanneAmont->changer_etat();
-        //ui->btnManuelVannesAmont->setText("ALARME\nEN AMONT");
         if(this->vanneAval->getEtat())
             this->vanneAval->changer_etat();
-        //ui->btnManuelVannesAval->setText("ALARME\nEN AVAL");
 
         ui->btnManuelVannesAmont->setProperty("enabled", false);
         ui->btnManuelVannesAmont->style()->unpolish(ui->btnManuelVannesAmont);
@@ -133,45 +132,38 @@ void MainWindow::arret_urgence()
         ui->btnManuelVannesAval->style()->polish(ui->btnManuelVannesAval);
         ui->btnManuelVannesAval->update();
 
-        //this->porteAmont->declancher_alarme();
-        //ui->btnManuelPortesAmont->setText("ALARME\nEN AMONT");
+        this->porteAmont->bloquer_porte();
         ui->btnManuelPortesAmont->setProperty("enabled", false);
         ui->btnManuelPortesAmont->style()->unpolish(ui->btnManuelPortesAmont);
         ui->btnManuelPortesAmont->style()->polish(ui->btnManuelPortesAmont);
         ui->btnManuelPortesAmont->update();
 
-        //this->porteAval->declancher_alarme();
-        //ui->btnManuelPortesAval->setText("ALARME\nEN AVAL");
+        this->porteAval->bloquer_porte();
         ui->btnManuelPortesAval->setProperty("enabled", false);
         ui->btnManuelPortesAval->style()->unpolish(ui->btnManuelPortesAval);
         ui->btnManuelPortesAval->style()->polish(ui->btnManuelPortesAval);
         ui->btnManuelPortesAval->update();
 
-        //ui->btnManuelSigEntAmont->setText("ALARME\nEN AMONT");
         ui->btnManuelSigEntAmont->setProperty("enabled", false);
         ui->btnManuelSigEntAmont->style()->unpolish(ui->btnManuelSigEntAmont);
         ui->btnManuelSigEntAmont->style()->polish(ui->btnManuelSigEntAmont);
         ui->btnManuelSigEntAmont->update();
 
-        //ui->btnManuelSigEntAval->setText("ALARME\nEN AVAL");
         ui->btnManuelSigEntAval->setProperty("enabled", false);
         ui->btnManuelSigEntAval->style()->unpolish(ui->btnManuelSigEntAval);
         ui->btnManuelSigEntAval->style()->polish(ui->btnManuelSigEntAval);
         ui->btnManuelSigEntAval->update();
 
-        //ui->btnManuelSigSasAmont->setText("ALARME\nEN AMONT");
         ui->btnManuelSigSasAmont->setProperty("enabled", false);
         ui->btnManuelSigSasAmont->style()->unpolish(ui->btnManuelSigSasAmont);
         ui->btnManuelSigSasAmont->style()->polish(ui->btnManuelSigSasAmont);
         ui->btnManuelSigSasAmont->update();
 
-        //ui->btnManuelSigSasAval->setText("ALARME\nEN AVAL");
         ui->btnManuelSigSasAval->setProperty("enabled", false);
         ui->btnManuelSigSasAval->style()->unpolish(ui->btnManuelSigSasAval);
         ui->btnManuelSigSasAval->style()->polish(ui->btnManuelSigSasAval);
         ui->btnManuelSigSasAval->update();
 
-        //ui->btnArretUrgenceMan->setText("EXTINCTION\nALARME");
         ui->btnArretUrgenceMan->setProperty("urgence", true);
         ui->btnArretUrgenceMan->style()->unpolish(ui->btnArretUrgenceMan);
         ui->btnArretUrgenceMan->style()->polish(ui->btnArretUrgenceMan);
@@ -190,14 +182,12 @@ void MainWindow::arret_urgence()
 
 
         this->vanneAmont->extinction_alarme();
-        //ui->btnManuelVannesAmont->setText("OUVRIR\nAMONT");
         ui->btnManuelVannesAmont->setProperty("enabled", true);
         ui->btnManuelVannesAmont->setProperty("fermer", false);
         ui->btnManuelVannesAmont->style()->unpolish(ui->btnManuelVannesAmont);
         ui->btnManuelVannesAmont->style()->polish(ui->btnManuelVannesAmont);
         ui->btnManuelVannesAmont->update();
         this->vanneAval->extinction_alarme();
-        //ui->btnManuelVannesAval->setText("OUVRIR\nAVAL");
         ui->btnManuelVannesAval->setProperty("enabled", true);
         ui->btnManuelVannesAval->setProperty("fermer", false);
         ui->btnManuelVannesAval->style()->unpolish(ui->btnManuelVannesAval);
@@ -207,12 +197,10 @@ void MainWindow::arret_urgence()
         this->porteAmont->extinction_alarme();
         if(this->porteAmont->get_ouvert())
         {
-            //ui->btnManuelPortesAmont->setText("FERMER\nAMONT");
             ui->btnManuelPortesAmont->setProperty("fermer", true);
         }
         else
         {
-            //ui->btnManuelPortesAmont->setText("OUVRIR\nAMONT");
             ui->btnManuelPortesAmont->setProperty("fermer", false);
         }
         ui->btnManuelPortesAmont->setProperty("enabled", true);
@@ -223,12 +211,10 @@ void MainWindow::arret_urgence()
         this->porteAval->extinction_alarme();
         if(this->porteAval->get_ouvert())
         {
-           // ui->btnManuelPortesAval->setText("FERMER\nAVAL");
             ui->btnManuelPortesAval->setProperty("fermer", true);
         }
         else
         {
-            //ui->btnManuelPortesAval->setText("OUVRIR\nAVAL");
             ui->btnManuelPortesAval->setProperty("fermer", false);
         }
         ui->btnManuelPortesAval->setProperty("enabled", true);
@@ -238,12 +224,10 @@ void MainWindow::arret_urgence()
 
         if(this->entAmont->get_couleur())
         {
-            //ui->btnManuelSigEntAmont->setText("ROUGE\nEN AMONT");
             ui->btnManuelSigEntAmont->setProperty("arret", true);
         }
         else
         {
-            //ui->btnManuelSigEntAmont->setText("VERT\nEN AMONT");
             ui->btnManuelSigEntAmont->setProperty("arret", false);
         }
         ui->btnManuelSigEntAmont->setProperty("enabled", true);
@@ -253,12 +237,10 @@ void MainWindow::arret_urgence()
 
         if(this->entAval->get_couleur())
         {
-            //ui->btnManuelSigEntAval->setText("ROUGE\nEN AVAL");
             ui->btnManuelSigEntAval->setProperty("arret", true);
         }
         else
         {
-            //ui->btnManuelSigEntAval->setText("VERT\nEN AVAL");
             ui->btnManuelSigEntAval->setProperty("arret", false);
         }
         ui->btnManuelSigEntAval->setProperty("enabled", true);
@@ -268,12 +250,10 @@ void MainWindow::arret_urgence()
 
         if(this->sasAmont->get_couleur())
         {
-            //ui->btnManuelSigSasAmont->setText("ROUGE\nEN AMONT");
             ui->btnManuelSigSasAmont->setProperty("arret", true);
         }
         else
         {
-            //ui->btnManuelSigSasAmont->setText("VERT\nEN AMONT");
             ui->btnManuelSigSasAmont->setProperty("arret", false);
         }
         ui->btnManuelSigSasAmont->setProperty("enabled", true);
@@ -283,12 +263,10 @@ void MainWindow::arret_urgence()
 
         if(this->sasAval->get_couleur())
         {
-            //ui->btnManuelSigSasAval->setText("ROUGE\nEN AVAL");
             ui->btnManuelSigSasAval->setProperty("arret", true);
         }
         else
         {
-            //ui->btnManuelSigSasAval->setText("VERT\nEN AVAL");
             ui->btnManuelSigSasAval->setProperty("arret", false);
         }
         ui->btnManuelSigSasAval->setProperty("enabled", true);
@@ -394,11 +372,6 @@ void MainWindow::alarme_vanne_aval(bool alarme)
     {
         image.load(":/EcluseAuto/vanne_panne.png");
         warning.load(":/EcluseAuto/warning.png");
-        /*ui->btnManuelVannesAval->setText("FERMER\nAVAL");
-        ui->btnManuelVannesAval->setProperty("fermer", true);
-        ui->btnManuelVannesAval->style()->unpolish(ui->btnManuelVannesAval);
-        ui->btnManuelVannesAval->style()->polish(ui->btnManuelVannesAval);
-        ui->btnManuelVannesAval->update();*/
         ui->aniVanneAvalOuverture->setPixmap(image);
 
         ui->aniWarning->setPixmap(warning);
@@ -409,11 +382,6 @@ void MainWindow::alarme_vanne_aval(bool alarme)
     else
     {
         image.load(":/EcluseAuto/vanne_fermee.png");
-        /*ui->btnManuelVannesAval->setText("OUVRIR\nAVAL");
-        ui->btnManuelVannesAval->setProperty("fermer", false);
-        ui->btnManuelVannesAval->style()->unpolish(ui->btnManuelVannesAval);
-        ui->btnManuelVannesAval->style()->polish(ui->btnManuelVannesAval);
-        ui->btnManuelVannesAval->update();*/
         ui->aniVanneAvalOuverture->setPixmap(image);
     }
 }
@@ -427,11 +395,6 @@ void MainWindow::alarme_vanne_amont(bool alarme)
     {
         image.load(":/EcluseAuto/vanne_panne.png");
         warning.load(":/EcluseAuto/warning.png");
-        /*ui->btnManuelVannesAmont->setText("FERMER\nAVAL");
-        ui->btnManuelVannesAmont->setProperty("fermer", true);
-        ui->btnManuelVannesAmont->style()->unpolish(ui->btnManuelVannesAmont);
-        ui->btnManuelVannesAmont->style()->polish(ui->btnManuelVannesAmont);
-        ui->btnManuelVannesAmont->update();*/
         ui->aniVanneAmontOuverture->setPixmap(image);
 
         ui->aniWarning->setPixmap(warning);
@@ -440,11 +403,6 @@ void MainWindow::alarme_vanne_amont(bool alarme)
     else
     {
         image.load(":/EcluseAuto/vanne_fermee.png");
-        /*ui->btnManuelVannesAmont->setText("OUVRIR\nAVAL");
-        ui->btnManuelVannesAmont->setProperty("fermer", false);
-        ui->btnManuelVannesAmont->style()->unpolish(ui->btnManuelVannesAmont);
-        ui->btnManuelVannesAmont->style()->polish(ui->btnManuelVannesAmont);
-        ui->btnManuelVannesAmont->update();*/
         ui->aniVanneAmontOuverture->setPixmap(image);
     }
 }
@@ -613,7 +571,8 @@ void MainWindow::fin_cycle_vanne_aval(bool etat)
 
 void MainWindow::echangeFeuManuelSigEntAmont()
 {
-    this->entAmont->start();
+    if ( this->porteAmont->get_ouvert() && (this->porteAmont->get_position() == 10))
+        this->entAmont->start();
 }
 
 void MainWindow::feuxEntreeAmont(bool value)
@@ -644,7 +603,8 @@ void MainWindow::feuxEntreeAmont(bool value)
 
 void MainWindow::echangeFeuManuelSigEntAval()
 {
-    this->entAval->start();
+    if ( this->porteAval->get_ouvert() && (this->porteAval->get_position() == 10))
+        this->entAval->start();
 }
 
 void MainWindow::feuxEntreeAval(bool value)
@@ -675,6 +635,7 @@ void MainWindow::feuxEntreeAval(bool value)
 
 void MainWindow::echangeFeuManuelSigSasAmont()
 {
+    if ( this->porteAmont->get_ouvert() && (this->porteAmont->get_position() == 10))
     this->sasAmont->start();
 }
 
@@ -706,6 +667,7 @@ void MainWindow::feuxSasAmont(bool value)
 
 void MainWindow::echangeFeuManuelSigSasAval()
 {
+    if ( this->porteAval->get_ouvert() && (this->porteAval->get_position() == 10) )
     this->sasAval->start();
 }
 
@@ -737,12 +699,15 @@ void MainWindow::feuxSasAval(bool value)
 
 void MainWindow::lancementPorteAmont()
 {
-    this->porteAmont->start();
+    if ( this->vanneAmont->getNiveauEauExterieur() == this->vanneAmont->getNiveauEauSas())
+    {
+        this->porteAmont->start();
 
-    ui->btnManuelPortesAmont->setProperty("enabled", false);
-    ui->btnManuelPortesAmont->style()->unpolish(ui->btnManuelPortesAmont);
-    ui->btnManuelPortesAmont->style()->polish(ui->btnManuelPortesAmont);
-    ui->btnManuelPortesAmont->update();
+        ui->btnManuelPortesAmont->setProperty("enabled", false);
+        ui->btnManuelPortesAmont->style()->unpolish(ui->btnManuelPortesAmont);
+        ui->btnManuelPortesAmont->style()->polish(ui->btnManuelPortesAmont);
+        ui->btnManuelPortesAmont->update();
+    }
 }
 
 void MainWindow::fin_cycle_porte_amont(bool etat)
@@ -786,12 +751,15 @@ void MainWindow::echangePorteAmont(int value)
 
 void MainWindow::lancementPorteAval()
 {
-    this->porteAval->start();
+    if ( this->vanneAval->getNiveauEauExterieur() == this->vanneAval->getNiveauEauSas())
+    {
+        this->porteAval->start();
 
-    ui->btnManuelPortesAval->setProperty("enabled", false);
-    ui->btnManuelPortesAval->style()->unpolish(ui->btnManuelPortesAval);
-    ui->btnManuelPortesAval->style()->polish(ui->btnManuelPortesAval);
-    ui->btnManuelPortesAval->update();
+        ui->btnManuelPortesAval->setProperty("enabled", false);
+        ui->btnManuelPortesAval->style()->unpolish(ui->btnManuelPortesAval);
+        ui->btnManuelPortesAval->style()->polish(ui->btnManuelPortesAval);
+        ui->btnManuelPortesAval->update();
+    }
 }
 
 void MainWindow::fin_cycle_porte_aval(bool etat)
