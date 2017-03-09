@@ -8,7 +8,11 @@
 #include "porte.h"
 #include "signalisation.h"
 #include "panne.h"
+#include "sequence.h"
 #include <QTextStream>
+#include <QMessageBox>
+#include <QInputDialog>
+#include <QDebug>
 
 namespace Ui {
 class MainWindow;
@@ -34,6 +38,14 @@ private:
     Signalisation * sasAval;
     Panne * panne;
     bool urgence;
+    bool maintenance;
+    void basculerManuel(bool etat);
+    sequence * timer;
+    sequence * timer2;
+    sequence * timer3;
+    sequence * timer4;
+    sequence * timer5;
+    sequence * timer6;
 
 private slots:
     void etat_vanne_amont(bool etat);
@@ -64,6 +76,18 @@ private slots:
     void feuxSasAmont(bool value);
     void feuxEntreeAval(bool value);
     void feuxSasAval(bool value);
+
+    void echangeModes();
+    void autoMontant();
+
+
+    void auto_remise_a_niveau();
+    void auto_ouvrir_porte_amont();
+    void auto_changement_etape();
+    void auto_fermer_porte_amont();
+    void auto_remise_a_niveau2();
+    void auto_ouvrir_porte_aval();
+    void auto_signal_sas_aval();
 };
 
 #endif // MAINWINDOW_H

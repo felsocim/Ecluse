@@ -13,6 +13,10 @@ int Porte::get_ouvert(){
     return ouvert;
 }
 
+int Porte::get_position(){
+    return position;
+}
+
 
 void Porte::run(){
     of();
@@ -23,6 +27,7 @@ void Porte::of() {
     int i=position;
     do  {
         emit transition(i);
+        this->position = i;
         sleep(1);
     } while (i-- && !bloquer);
         position = 10;

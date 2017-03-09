@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>872</width>
-    <height>787</height>
+    <height>811</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>350</y>
+      <y>380</y>
       <width>851</width>
       <height>401</height>
      </rect>
@@ -1297,10 +1297,10 @@ URGENCE</string>
    <widget class="QLabel" name="aniNiveauAval">
     <property name="geometry">
      <rect>
-      <x>579</x>
-      <y>209</y>
-      <width>261</width>
-      <height>61</height>
+      <x>580</x>
+      <y>210</y>
+      <width>260</width>
+      <height>60</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1636,6 +1636,19 @@ URGENCE</string>
      <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnMaintenance">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>350</y>
+      <width>141</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Maintenance</string>
+    </property>
+   </widget>
    <zorder>aniFond_5</zorder>
    <zorder>aniNavire</zorder>
    <zorder>aniNiveauAval</zorder>
@@ -1663,6 +1676,7 @@ URGENCE</string>
    <zorder>aniVanneAvalOuverture</zorder>
    <zorder>aniFond_7</zorder>
    <zorder>aniFond_8</zorder>
+   <zorder>btnMaintenance</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
