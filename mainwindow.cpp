@@ -184,7 +184,7 @@ void MainWindow::arret_urgence()
         panne->start();
 
         QPixmap image;
-        image.load(":/EcluseAuto/blank.png");
+        image.load(":/EcluseAuto/res/res/blank.png");
         ui->aniWarning->setPixmap(image);
         ui->aniWarningText->setText("");
 
@@ -392,8 +392,8 @@ void MainWindow::alarme_vanne_aval(bool alarme)
 
     if(alarme)
     {
-        image.load(":/EcluseAuto/vanne_panne.png");
-        warning.load(":/EcluseAuto/warning.png");
+        image.load(":/EcluseAuto/res/res/vanne_panne.png");
+        warning.load(":/EcluseAuto/res/res/warning.png");
         /*ui->btnManuelVannesAval->setText("FERMER\nAVAL");
         ui->btnManuelVannesAval->setProperty("fermer", true);
         ui->btnManuelVannesAval->style()->unpolish(ui->btnManuelVannesAval);
@@ -408,7 +408,7 @@ void MainWindow::alarme_vanne_aval(bool alarme)
     }
     else
     {
-        image.load(":/EcluseAuto/vanne_fermee.png");
+        image.load(":/EcluseAuto/res/res/vanne_fermee.png");
         /*ui->btnManuelVannesAval->setText("OUVRIR\nAVAL");
         ui->btnManuelVannesAval->setProperty("fermer", false);
         ui->btnManuelVannesAval->style()->unpolish(ui->btnManuelVannesAval);
@@ -425,8 +425,8 @@ void MainWindow::alarme_vanne_amont(bool alarme)
 
     if(alarme)
     {
-        image.load(":/EcluseAuto/vanne_panne.png");
-        warning.load(":/EcluseAuto/warning.png");
+        image.load(":/EcluseAuto/res/res/vanne_panne.png");
+        warning.load(":/EcluseAuto/res/warning.png");
         /*ui->btnManuelVannesAmont->setText("FERMER\nAVAL");
         ui->btnManuelVannesAmont->setProperty("fermer", true);
         ui->btnManuelVannesAmont->style()->unpolish(ui->btnManuelVannesAmont);
@@ -439,7 +439,7 @@ void MainWindow::alarme_vanne_amont(bool alarme)
     }
     else
     {
-        image.load(":/EcluseAuto/vanne_fermee.png");
+        image.load(":/EcluseAuto/res/vanne_fermee.png");
         /*ui->btnManuelVannesAmont->setText("OUVRIR\nAVAL");
         ui->btnManuelVannesAmont->setProperty("fermer", false);
         ui->btnManuelVannesAmont->style()->unpolish(ui->btnManuelVannesAmont);
@@ -456,8 +456,8 @@ void MainWindow::alarme_porte_amont(bool alarme)
 
     if(alarme)
     {
-        image.load(":/EcluseAuto/porte_fermee.png");
-        warning.load(":/EcluseAuto/warning.png");
+        image.load(":/EcluseAuto/res/porte_fermee.png");
+        warning.load(":/EcluseAuto/res/warning.png");
 
         ui->aniPorteAmont->setPixmap(image);
 
@@ -466,7 +466,7 @@ void MainWindow::alarme_porte_amont(bool alarme)
     }
     else
     {
-        image.load(":/EcluseAuto/porte_fermee.png");
+        image.load(":/EcluseAuto/res/porte_fermee.png");
 
         ui->aniPorteAmont->setPixmap(image);
     }
@@ -479,8 +479,8 @@ void MainWindow::alarme_porte_aval(bool alarme)
 
     if(alarme)
     {
-        image.load(":/EcluseAuto/porte_fermee.png");
-        warning.load(":/EcluseAuto/warning.png");
+        image.load(":/EcluseAuto/res/porte_fermee.png");
+        warning.load(":/EcluseAuto/res/warning.png");
 
         ui->aniPorteAval->setPixmap(image);
 
@@ -489,7 +489,7 @@ void MainWindow::alarme_porte_aval(bool alarme)
     }
     else
     {
-        image.load(":/EcluseAuto/porte_fermee.png");
+        image.load(":/EcluseAuto/res/porte_fermee.png");
 
         ui->aniPorteAval->setPixmap(image);
     }
@@ -511,13 +511,13 @@ void MainWindow::etat_vanne_amont(bool etat)
 
     if(etat)
     {
-        image.load(":/EcluseAuto/vanne_ouverte.png");
+        image.load(":/EcluseAuto/res/vanne_ouverte.png");
         ui->btnManuelVannesAmont->setText("AMONT\nOUVERT");
         ui->aniVanneAmontOuverture->setPixmap(image);
     }
     else
     {
-        image.load(":/EcluseAuto/vanne_fermee.png");
+        image.load(":/EcluseAuto/res/vanne_fermee.png");
         ui->btnManuelVannesAmont->setText("AMONT\nFERMÉ");
         ui->aniVanneAmontOuverture->setPixmap(image);
     }
@@ -569,13 +569,13 @@ void MainWindow::etat_vanne_aval(bool etat)
 
     if(etat)
     {
-        image.load(":/EcluseAuto/vanne_ouverte.png");
+        image.load(":/EcluseAuto/res/vanne_ouverte.png");
         ui->btnManuelVannesAval->setText("AVAL\nOUVERT");
         ui->aniVanneAvalOuverture->setPixmap(image);
     }
     else
     {
-        image.load(":/EcluseAuto/vanne_fermee.png");
+        image.load(":/EcluseAuto/res/vanne_fermee.png");
         ui->btnManuelVannesAval->setText("AVAL\nFERMÉ");
         ui->aniVanneAvalOuverture->setPixmap(image);
     }
@@ -622,7 +622,7 @@ void MainWindow::feuxEntreeAmont(bool value)
 
     if (value)
     {
-        image.load(":/EcluseAuto/feu_vert.png");
+        image.load(":/EcluseAuto/res/feu_vert.png");
         ui->btnManuelSigEntAmont->setText("ROUGE\nEN AMONT");
         ui->btnManuelSigEntAmont->setProperty("arret", true);
         ui->btnManuelSigEntAmont->style()->unpolish(ui->btnManuelSigEntAmont);
@@ -631,7 +631,7 @@ void MainWindow::feuxEntreeAmont(bool value)
     }
     else
     {
-        image.load(":/EcluseAuto/feu_rouge.png");
+        image.load(":/EcluseAuto/res/feu_rouge.png");
         ui->btnManuelSigEntAmont->setText("VERT\nEN AMONT");
         ui->btnManuelSigEntAmont->setProperty("arret", false);
         ui->btnManuelSigEntAmont->style()->unpolish(ui->btnManuelSigEntAmont);
@@ -653,7 +653,7 @@ void MainWindow::feuxEntreeAval(bool value)
 
     if (value)
     {
-        image.load(":/EcluseAuto/feu_vert.png");
+        image.load(":/EcluseAuto/res/feu_vert.png");
         ui->btnManuelSigEntAval->setText("ROUGE\nEN AVAL");
         ui->btnManuelSigEntAval->setProperty("arret", true);
         ui->btnManuelSigEntAval->style()->unpolish(ui->btnManuelSigEntAval);
@@ -662,7 +662,7 @@ void MainWindow::feuxEntreeAval(bool value)
     }
     else
     {
-        image.load(":/EcluseAuto/feu_rouge.png");
+        image.load(":/EcluseAuto/res/feu_rouge.png");
         ui->btnManuelSigEntAval->setText("VERT\nEN AVAL");
         ui->btnManuelSigEntAval->setProperty("arret", false);
         ui->btnManuelSigEntAval->style()->unpolish(ui->btnManuelSigEntAval);
@@ -684,7 +684,7 @@ void MainWindow::feuxSasAmont(bool value)
 
     if (value)
     {
-        image.load(":/EcluseAuto/feu_vert.png");
+        image.load(":/EcluseAuto/res/feu_vert.png");
         ui->btnManuelSigSasAmont->setText("ROUGE\nEN AMONT");
         ui->btnManuelSigSasAmont->setProperty("arret", true);
         ui->btnManuelSigSasAmont->style()->unpolish(ui->btnManuelSigSasAmont);
@@ -693,7 +693,7 @@ void MainWindow::feuxSasAmont(bool value)
     }
     else
     {
-        image.load(":/EcluseAuto/feu_rouge.png");
+        image.load(":/EcluseAuto/res/feu_rouge.png");
         ui->btnManuelSigSasAmont->setText("VERT\nEN AMONT");
         ui->btnManuelSigSasAmont->setProperty("arret", false);
         ui->btnManuelSigSasAmont->style()->unpolish(ui->btnManuelSigSasAmont);
@@ -715,7 +715,7 @@ void MainWindow::feuxSasAval(bool value)
 
     if (value)
     {
-        image.load(":/EcluseAuto/feu_vert.png");
+        image.load(":/EcluseAuto/res/feu_vert.png");
         ui->btnManuelSigSasAval->setText("ROUGE\nEN AVAL");
         ui->btnManuelSigSasAval->setProperty("arret", true);
         ui->btnManuelSigSasAval->style()->unpolish(ui->btnManuelSigSasAval);
@@ -724,7 +724,7 @@ void MainWindow::feuxSasAval(bool value)
     }
     else
     {
-        image.load(":/EcluseAuto/feu_rouge.png");
+        image.load(":/EcluseAuto/res/feu_rouge.png");
         ui->btnManuelSigSasAval->setText("VERT\nEN AVAL");
         ui->btnManuelSigSasAval->setProperty("arret", false);
         ui->btnManuelSigSasAval->style()->unpolish(ui->btnManuelSigSasAval);

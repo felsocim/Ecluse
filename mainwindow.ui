@@ -52,7 +52,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="resimages.qrc">:/EcluseAuto/step3.png</pixmap>
+          <pixmap>:/EcluseAuto/step3.png</pixmap>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -68,7 +68,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="resimages.qrc">:/EcluseAuto/step2.png</pixmap>
+          <pixmap>:/EcluseAuto/step2.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>false</bool>
@@ -101,7 +101,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="resimages.qrc">:/EcluseAuto/step1.png</pixmap>
+          <pixmap>:/EcluseAuto/step1.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>false</bool>
@@ -1227,7 +1227,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/fond.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniPorteAmont">
@@ -1243,7 +1243,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/porte_fermee.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/porte_fermee.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniPorteAval">
@@ -1259,7 +1259,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/porte_fermee.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/porte_fermee.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniNiveauSas">
@@ -1355,7 +1355,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/vanne_fermee.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/vanne_fermee.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniVanneAvalOuverture">
@@ -1371,7 +1371,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/vanne_fermee.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/vanne_fermee.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniNavire">
@@ -1387,7 +1387,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/navire.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/navire.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniFeuEntreeAmont">
@@ -1403,7 +1403,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/feu_rouge.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniFeuSasAmont">
@@ -1419,7 +1419,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/feu_rouge.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1438,7 +1438,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/feu_rouge.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1457,7 +1457,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/feu_rouge.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/feu_rouge.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniWarning">
@@ -1505,7 +1505,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/fond.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniFond_3">
@@ -1521,7 +1521,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/fond.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniFond_4">
@@ -1537,7 +1537,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/fond.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniVanneAmont_2">
@@ -1569,7 +1569,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/fond.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniFond_6">
@@ -1585,7 +1585,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/fond.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniVanneAval_2">
@@ -1617,7 +1617,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/fond.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="aniFond_8">
@@ -1633,7 +1633,7 @@ URGENCE</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resimages.qrc">:/EcluseAuto/fond.png</pixmap>
+     <pixmap resource="resimages.qrc">:/EcluseAuto/res/fond.png</pixmap>
     </property>
    </widget>
    <zorder>aniFond_5</zorder>
@@ -1670,7 +1670,7 @@ URGENCE</string>
      <x>0</x>
      <y>0</y>
      <width>872</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
