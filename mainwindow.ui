@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Interface de contrôle</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabs">
@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tabAuto">
      <attribute name="title">
@@ -52,7 +52,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>:/EcluseAuto/step3.png</pixmap>
+          <pixmap resource="resimages.qrc">:/EcluseAuto/res/step3.png</pixmap>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -68,7 +68,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>:/EcluseAuto/step2.png</pixmap>
+          <pixmap resource="resimages.qrc">:/EcluseAuto/res/step2.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>false</bool>
@@ -101,7 +101,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>:/EcluseAuto/step1.png</pixmap>
+          <pixmap resource="resimages.qrc">:/EcluseAuto/res/step1.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>false</bool>
@@ -335,7 +335,7 @@ QPushButton#btnArretUrgence[enabled=&quot;false&quot;] {
          </property>
          <property name="text">
           <string>ARRÊT
-URGENCE</string>
+D'URGENCE</string>
          </property>
         </widget>
        </item>
@@ -360,7 +360,7 @@ URGENCE</string>
       <bool>true</bool>
      </property>
      <attribute name="title">
-      <string>Mode Manuel</string>
+      <string>Manuel</string>
      </attribute>
      <widget class="QGroupBox" name="gpbManuelPortes">
       <property name="geometry">
@@ -401,49 +401,25 @@ URGENCE</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;][fermer=&quot;false&quot;] {
+        <string notr="true">QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;][fermer=&quot;false&quot;]:hover {
+QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;][fermer=&quot;false&quot;]:pressed {
+QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
-	border-radius: 10px;
-	border: 2px solid #FFFFFF;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;][fermer=&quot;true&quot;] {
-	color: #FFFFFF;
-	background-color: #FF0000;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;][fermer=&quot;true&quot;]:hover {
-	color: #FFFFFF;
-	background-color: #FF5500;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelPortesAmont[enabled=&quot;true&quot;][fermer=&quot;true&quot;]:pressed {
-	color: #FFFFFF;
-	background-color: #FF5500;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -455,10 +431,7 @@ QPushButton#btnManuelPortesAmont[enabled=&quot;false&quot;] {
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
-}
-
-
-</string>
+}</string>
        </property>
        <property name="text">
         <string>OUVRIR
@@ -488,49 +461,25 @@ AMONT</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;][fermer=&quot;false&quot;] {
+        <string notr="true">QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;][fermer=&quot;false&quot;]:hover {
+QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;][fermer=&quot;false&quot;]:pressed {
+QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
-	border-radius: 10px;
-	border: 2px solid #FFFFFF;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;][fermer=&quot;true&quot;] {
-	color: #FFFFFF;
-	background-color: #FF0000;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;][fermer=&quot;true&quot;]:hover {
-	color: #FFFFFF;
-	background-color: #FF5500;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelPortesAval[enabled=&quot;true&quot;][fermer=&quot;true&quot;]:pressed {
-	color: #FFFFFF;
-	background-color: #FF5500;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -542,9 +491,7 @@ QPushButton#btnManuelPortesAval[enabled=&quot;false&quot;] {
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
-}
-
-</string>
+}</string>
        </property>
        <property name="text">
         <string>OUVRIR
@@ -594,49 +541,25 @@ AVAL</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;][fermer=&quot;false&quot;] {
+        <string notr="true">QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;][fermer=&quot;false&quot;]:hover {
+QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;][fermer=&quot;false&quot;]:pressed {
+QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
-	border-radius: 10px;
-	border: 2px solid #FFFFFF;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;][fermer=&quot;true&quot;] {
-	color: #FFFFFF;
-	background-color: #FF0000;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;][fermer=&quot;true&quot;]:hover {
-	color: #FFFFFF;
-	background-color: #FF5500;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelVannesAmont[enabled=&quot;true&quot;][fermer=&quot;true&quot;]:pressed {
-	color: #FFFFFF;
-	background-color: #FF5500;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -648,9 +571,7 @@ QPushButton#btnManuelVannesAmont[enabled=&quot;false&quot;] {
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
-}
-
-</string>
+}</string>
        </property>
        <property name="text">
         <string>OUVRIR
@@ -680,49 +601,25 @@ AMONT</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;][fermer=&quot;false&quot;] {
+        <string notr="true">QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;][fermer=&quot;false&quot;]:hover {
+QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;][fermer=&quot;false&quot;]:pressed {
+QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
-	border-radius: 10px;
-	border: 2px solid #FFFFFF;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;][fermer=&quot;true&quot;] {
-	color: #FFFFFF;
-	background-color: #FF0000;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;][fermer=&quot;true&quot;]:hover {
-	color: #FFFFFF;
-	background-color: #FF5500;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelVannesAval[enabled=&quot;true&quot;][fermer=&quot;true&quot;]:pressed {
-	color: #FFFFFF;
-	background-color: #FF5500;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -734,9 +631,7 @@ QPushButton#btnManuelVannesAval[enabled=&quot;false&quot;] {
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
-}
-
-</string>
+}</string>
        </property>
        <property name="text">
         <string>OUVRIR
@@ -786,49 +681,25 @@ AVAL</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;][arret=&quot;false&quot;] {
+        <string notr="true">QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;][arret=&quot;false&quot;]:hover {
+QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;][arret=&quot;false&quot;]:pressed {
+QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
-	border-radius: 10px;
-	border: 2px solid #FFFFFF;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;][arret=&quot;true&quot;] {
-	color: #FFFFFF;
-	background-color: #FF0000;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;][arret=&quot;true&quot;]:hover {
-	color: #FFFFFF;
-	background-color: #FF5500;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigEntAmont[enabled=&quot;true&quot;][arret=&quot;true&quot;]:pressed {
-	color: #FFFFFF;
-	background-color: #FF5500;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -840,9 +711,7 @@ QPushButton#btnManuelSigEntAmont[enabled=&quot;false&quot;] {
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
-}
-
-</string>
+}</string>
        </property>
        <property name="text">
         <string>VERT
@@ -872,49 +741,25 @@ EN AMONT</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;][arret=&quot;false&quot;] {
+        <string notr="true">QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;][arret=&quot;false&quot;]:hover {
+QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;][arret=&quot;false&quot;]:pressed {
+QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
-	border-radius: 10px;
-	border: 2px solid #FFFFFF;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;][arret=&quot;true&quot;] {
-	color: #FFFFFF;
-	background-color: #FF0000;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;][arret=&quot;true&quot;]:hover {
-	color: #FFFFFF;
-	background-color: #FF5500;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigEntAval[enabled=&quot;true&quot;][arret=&quot;true&quot;]:pressed {
-	color: #FFFFFF;
-	background-color: #FF5500;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -926,9 +771,7 @@ QPushButton#btnManuelSigEntAval[enabled=&quot;false&quot;] {
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
-}
-
-</string>
+}</string>
        </property>
        <property name="text">
         <string>VERT
@@ -978,49 +821,25 @@ EN AVAL</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;][arret=&quot;false&quot;] {
+        <string notr="true">QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;][arret=&quot;false&quot;]:hover {
+QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;][arret=&quot;false&quot;]:pressed {
+QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
-	border-radius: 10px;
-	border: 2px solid #FFFFFF;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;][arret=&quot;true&quot;] {
-	color: #FFFFFF;
-	background-color: #FF0000;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;][arret=&quot;true&quot;]:hover {
-	color: #FFFFFF;
-	background-color: #FF5500;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigSasAmont[enabled=&quot;true&quot;][arret=&quot;true&quot;]:pressed {
-	color: #FFFFFF;
-	background-color: #FF5500;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -1032,9 +851,7 @@ QPushButton#btnManuelSigSasAmont[enabled=&quot;false&quot;] {
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
-}
-
-</string>
+}</string>
        </property>
        <property name="text">
         <string>VERT
@@ -1064,49 +881,25 @@ EN AMONT</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;][arret=&quot;false&quot;] {
+        <string notr="true">QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;] {
 	color: #FFFFFF;
-	background-color: #55AA00;
+	background-color: #5555FF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;][arret=&quot;false&quot;]:hover {
+QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;]:hover {
 	color: #FFFFFF;
-	background-color: #6CD800;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
 }
 
-QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;][arret=&quot;false&quot;]:pressed {
+QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;]:pressed {
 	color: #FFFFFF;
-	background-color: #6CD800;
-	border-radius: 10px;
-	border: 2px solid #FFFFFF;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;][arret=&quot;true&quot;] {
-	color: #FFFFFF;
-	background-color: #FF0000;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;][arret=&quot;true&quot;]:hover {
-	color: #FFFFFF;
-	background-color: #FF5500;
-	border-radius: 10px;
-	border: none;
-	padding: 5px 0px;
-}
-
-QPushButton#btnManuelSigSasAval[enabled=&quot;true&quot;][arret=&quot;true&quot;]:pressed {
-	color: #FFFFFF;
-	background-color: #FF5500;
+	background-color: #55AAFF;
 	border-radius: 10px;
 	border: 2px solid #FFFFFF;
 	padding: 5px 0px;
@@ -1118,9 +911,7 @@ QPushButton#btnManuelSigSasAval[enabled=&quot;false&quot;] {
 	border-radius: 10px;
 	border: none;
 	padding: 5px 0px;
-}
-
-</string>
+}</string>
        </property>
        <property name="text">
         <string>VERT
@@ -1206,7 +997,7 @@ QPushButton#btnArretUrgenceMan[enabled=&quot;false&quot;] {
       </property>
       <property name="text">
        <string>ARRÊT
-URGENCE</string>
+D'URGENCE</string>
       </property>
       <property name="urgence" stdset="0">
        <bool>false</bool>
@@ -1268,7 +1059,7 @@ URGENCE</string>
       <x>270</x>
       <y>130</y>
       <width>310</width>
-      <height>140</height>
+      <height>141</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1670,7 +1461,7 @@ URGENCE</string>
      <x>0</x>
      <y>0</y>
      <width>872</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
