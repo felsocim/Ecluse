@@ -10,7 +10,7 @@ Dans le cadre des cours d'interfaces homme-machine, nous avons développer une m
 
 ### Mode automatique
 
-Au moment où le bateau arrive devant l'écluse les signalisations sont rouges et les portes sont généralement fermées. Il se peut que la porte soit ouverte par le fait qu'un autre navire soit passé récemment. Tant que la signalisation est rouge le navire ne peut pas entrer dans l'écluse. Le​ navire​ se​ trouve devant​ à l'entrée​ de l'écluse,​ devant​ les​ signalisations​ qui sont rouges. La démarche se fait en deux étapes :
+Au moment où le bateau arrive devant l'écluse les signalisations sont rouges et les portes sont généralement fermées. Il se peut que la porte soit ouverte par le fait qu'un autre navire soit passé récemment. Tant que la signalisation est rouge le navire ne peut pas entrer dans l'écluse. Le navire se trouve devant à l'entrée de l'écluse, devant les signalisations qui sont rouges. La démarche se fait en deux étapes :
 
 1. La personne doit choisir son sens de transfert ( montant / avalant ). Lors de l'appuie, mise à niveau du niveau d'eau et ouverture de la porte. La signalisation à
 l'entrée passe au vert indiquant que le navire peut entrer dans l'écluse.
@@ -38,4 +38,4 @@ Le projet a été réalisé à l'aide du framework Qt(R). La compilation peut ê
 
 ## Auteurs
 
-[Marek Felsoci](mailto:marek.felsoci@etu.unistra.fr) et Arnaud Pinsun, étudiants à l'[Université de Strasbourg](http://www.unistra.fr).
+[Marek Felsoci](mailto:marek.felsoci@etu.unistra.fr) et Ibrahim Ibis, étudiants à l'[Université de Strasbourg](http://www.unistra.fr).
